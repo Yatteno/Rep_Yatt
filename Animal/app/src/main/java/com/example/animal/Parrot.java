@@ -1,9 +1,9 @@
 package com.example.animal;
 
-public class Parrot extends Animal {
+class Parrot extends Animal implements Pet{
 
 
-    public Parrot(String name) {
+    Parrot(String name) {
         super(name);
         System.out.println(getName() + " is flying");
     }
@@ -18,5 +18,17 @@ public class Parrot extends Animal {
             return "Nameless Parrot";
         else
             return name;
+    }
+
+    public void eat(){
+        System.out.println(getName() + " is eating");
+    }
+
+    public void walk(){
+        System.out.println(getName() + " is walking");
+    }
+
+    public void print(){
+        System.out.println(getName() + " is Pet");
     }
 }

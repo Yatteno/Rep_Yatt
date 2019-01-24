@@ -3,11 +3,14 @@ package com.example.animal;
 
 import java.util.Scanner;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
     private boolean isPet = true;
     static int counter;
 
+    Animal() {
+        counter++;
+    }
 
     public String getName() {
         if (name == null)
@@ -25,8 +28,6 @@ public class Animal {
         this.name = name;
         System.out.println("Кличка:" + getName());
         counter++;
-        System.out.println("Количество животных: " + counter);
-
     }
 
     public Animal(boolean isPet) {
@@ -34,9 +35,9 @@ public class Animal {
 
     }
 
-    public void eat() {
-        System.out.println(getName() + " is eating");
-    }
+    public abstract void eat();
+
+    public abstract void walk();
 
 }
 

@@ -1,7 +1,8 @@
 package com.example.animal;
 
-public class Cat extends Animal {
-    public Cat(String name) {
+class Cat extends Animal implements Pet{
+
+    Cat(String name) {
         super(name);
     }
 
@@ -17,7 +18,15 @@ public class Cat extends Animal {
             return name;
     }
 
-    public void eat( String food) {
-        System.out.println(getName() + " is eating " + food);
+    public void eat() {
+        System.out.println(getName() + " is eating");
+    }
+
+    public void walk(){
+        System.out.println(getName() + " is walking");
+    }
+
+    public void print(){
+        System.out.println(getName() + " is Pet");
     }
 }
