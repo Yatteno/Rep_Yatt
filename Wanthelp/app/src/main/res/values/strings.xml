@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Хочу помочь</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_profil">Профиль</string>
+    <string name="menu_news">Новости</string>
+    <string name="menu_history">История</string>
+    <string name="menu_heart">Помощь</string>
+
+</resources>
