@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="44dp"
+    android:layout_width="match_parent">
+    <item
+        android:id="@+id/i_news"
+        android:icon="@drawable/news_icon"
+        android:title="@string/menu_news" />
+    <item
+        android:id="@+id/i_search"
+        android:icon="@drawable/searh_icon"
+        android:title="@string/menu_search" />
+    <item
+        android:id="@+id/i_help"
+        android:title="@string/menu_heart" />
+    <item
+        android:id="@+id/i_history"
+        android:icon="@drawable/icon_history"
+        android:title="@string/menu_history" />
+    <item
+        android:id="@+id/i_profile"
+        android:icon="@drawable/profil_icon"
+        android:title="@string/menu_profil" />
+
+</menu>
